@@ -1,0 +1,142 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2313d9;
+    color: #fff;
+    font-weight: bold; /* Changed from font-style to font-weight */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold; /* Changed from font-style to font-weight */
+}
+@media (max-inline-size: 768px) {
+    .navbar ul {
+        display: none;
+        /* Hide the navbar links */
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-inline-end: auto;
+    }
+
+    /* Add more styles for smaller screens as needed */
+}
+
+.navbar ul li {
+    display: inline;
+    margin-inline-end: 20px; /* Changed from margin-inline-end to margin-right */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    margin-inline-start: 20px; /* Changed from margin-inline-start to margin-left */
+    font-weight: bold; /* Changed from font-style to font-weight */
+    font-family: monospace;
+    font-size: 25px;
+}
+
+
+
+.right-bg {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-image: url('E:\React\lab-frontend\src\assets\lab image.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Adjust this value as needed */
+    z-index: -1;
+}
+
+.text-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    margin-inline-start: 20px;
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 40px;
+    margin-block-start: 110px;
+    /* Adjust this value as needed */
+
+    /* Animation */
+    animation-name: slideInFromTop;
+    /* Name of the animation */
+    animation-duration: 1s;
+    /* Duration of the animation */
+    animation-delay: 0.5s;
+    /* Delay before the animation starts */
+    animation-fill-mode: forwards;
+    /* Keeps the final state of the animation */
+}
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        /* Start position */
+        opacity: 0;
+        /* Start opacity */
+    }
+
+    to {
+        transform: translateY(0);
+        /* End position */
+        opacity: 1;
+        /* End opacity */
+    }
+}
+.button-container {
+    margin-block-start: 100px;
+    /* Initial position of the buttons (bottom) */
+    margin-block-end: 20px;
+    /* Add margin-bottom to create space between buttons and content below */
+    animation-name: moveUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+    from {
+        margin-block-start: 100px;
+        /* Initial position (bottom) */
+        opacity: 0;
+        /* Start with opacity 0 for a fade-in effect */
+    }
+
+    to {
+        margin-block-start: 20px;
+        /* Final position (top) */
+        opacity: 1;
+        /* End with opacity 1 */
+    }
+}
+
+.button-container a {
+    margin-inline-end: 50px;
+    /* Add margin-right to create space between buttons */
+    inline-size: 150px;
+    /* Set width of the button */
+    block-size: 40px;
+    /* Set height of the button */
+    font-size: 20px;
+    font-weight: bolder;
+    /* Set font size of the button text */
+}

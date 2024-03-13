@@ -1,0 +1,103 @@
+/* App.css */
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2313d9;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+@media (max-inline-size: 768px) {
+    .navbar ul {
+        display: none;
+        /* Hide the navbar links */
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-inline-end: auto;
+    }
+
+    /* Add more styles for smaller screens as needed */
+}
+
+.navbar ul li {
+    display: inline;
+    margin-inline-end: 20px;
+    /* Changed from margin-inline-end to margin-right */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Table styles */
+table {
+    inline-size: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: start;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Button styles */
+.update-btn,
+.delete-btn {
+    padding: 5px 10px;
+    margin-inline-end: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.update-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.update-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #da190b;
+}

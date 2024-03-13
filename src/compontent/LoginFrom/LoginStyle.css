@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin:0px;
+    padding: 0px;
+    background-color: #ede6e6;
+}
+
+/* Base Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 90vh;
+}
+
+.login-form {
+    background-color: #fafafa;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-inline-size: 350px;
+    inline-size: 350%;
+    margin: 0 auto;
+    /* Center horizontally */
+    justify-content: center;
+    /* This is used for flex containers */
+}
+
+.login-form h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2309e0;
+    text-align: center;
+    margin-block-end: 30px;
+}
+.login-form label {
+    margin-block-end: 6px;
+    /* Reduced margin */
+    font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    inline-size: 100%;
+    padding: 6px;
+    margin-block-end: 20px;
+    border: 1.2px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: #262626;
+    margin: 0 auto;
+    
+}
+
+.login-form button[type="submit"] {
+padding: 12px 24px;
+    background-color: rgb(13, 60, 218);
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.login-form button span{
+    color: black;
+        position: relative;
+        z-index: 1;
+        transition: color 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+.login-form button::before{
+    content: '';
+        position: absolute;
+        inset-block-start: 50%;
+        inset-inline-start: 0;
+        border-radius: 6px;
+        transform: translate(-100%, -50%);
+        inline-size: 100%;
+        block-size: 100%;
+        background-color: hsl(191, 82%, 38%);
+        transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+}
+.login-form button:hover span{
+    color: rgb(40, 18, 240);
+}
+.login-form button:hover::before{
+ transform: translate(0, -50%);
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #1485d4;
+}
+
+.login-form .text-center {
+    text-align: center;
+    margin-block-start: 20px;
+}
+
+.login-form .separator {
+    margin: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.login-form .separator::before,
+.login-form .separator::after {
+    content: "";
+    inline-size: 45%;
+    block-size: 1px;
+    background-color: #dbdbdb;
+    position: absolute;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+}
+
+.login-form .separator::before {
+    inset-inline-end: 10px;
+}
+
+.login-form .separator::after {
+    inset-inline-start: 10px;
+}
+
+.login-form .or {
+    font-size: 14px;
+    color: #8e8e8e;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    background-color: #fafafa;
+    padding: 0 15px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Desktop Responsive */
+@media (min-inline-size: 768px) {
+    .login-form {
+        max-inline-size: 500px;
+        padding: 60px;
+    }
+
+    .login-form h2 {
+        font-size: 32px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        font-size: 18px;
+    }
+
+    .login-form button[type="submit"] {
+        font-size: 18px;
+    }
+}
+.right-coner{
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        inline-size: 0%;
+        overflow: 100px; 
+        z-index: 100px;
+}

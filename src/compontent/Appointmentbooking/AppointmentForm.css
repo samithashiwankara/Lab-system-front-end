@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #ede6e6;
+}
+.Appointment-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 100vh;
+    padding: 10px;
+}
+
+/* Adjustments for desktop responsiveness */
+@media (min-inline-size: 768px) {
+    .Appointment-container {
+        padding: 20px;
+    }
+}
+.appointment-form {
+    background-color: #f4f4f4;
+    border-radius: 9px;
+    padding: 30px 50px;
+    /* Adjust padding to expand left and right */
+    inline-size: calc(350% - 200px);
+    /* Adjust inline-size to expand left and right */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-inline-start: 10px;
+    /* Move the form to the left */
+
+    /* Add spacing below the form */
+}
+.appointment-form h2 {
+    text-align: center;
+    margin-block-end: 20px;
+    font-weight: bold;
+    color: #0a74ed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.appointment-form form {
+    inline-size: 100%;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.appointment-form .form-group {
+    margin-block-end: 10px;
+}
+
+.appointment-form label {
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.appointment-form input[type="text"],
+.appointment-form input[type="email"],
+.appointment-form input[type="date"],
+.appointment-form input[type="time"],
+.appointment-form select {
+    inline-size: 100%;
+    padding: 2px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.appointment-form input[type="text"]:focus,
+.appointment-form input[type="email"]:focus,
+.appointment-form input[type="date"]:focus,
+.appointment-form input[type="time"]:focus,
+.appointment-form select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.appointment-form input[type="submit"] {
+    inline-size: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.appointment-form .invalid-feedback {
+    display: block;
+    color: #dc3545;
+    margin-block-start: 5px;
+}
+
+.appointment-form .form-control.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.navigation-bar {
+        position: fixed;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        inline-size: 100%;
+        padding: 20px 40px;
+        background-color: #0056b3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 80;
+        color: #2309e0;
+        font-style: italic;
+}
+.bold-text {
+    justify-content: space-between;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+

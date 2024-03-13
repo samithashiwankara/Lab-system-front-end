@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin:0px;
+    padding: 0px;
+    background-color: #ede6e6;
+}
+
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 105vh;
+    flex-direction:row;
+}
+
+.register-form {
+    inline-size: 350px;
+    background-color: #f4ebeb;
+    border-radius: 7px;
+    box-shadow: 0 0 8px rgba(193, 186, 186, 0.1);
+    padding: 15px;
+    display: grid;
+    grid-gap:10px;
+}
+
+.register-form h2 {
+    font-size: 20px;
+    border-radius: 1px;
+    box-shadow: 0 0 8px rgba(193, 186, 186, 0.1);
+    padding: 10px;
+    color: #1f01de;
+    font-weight: bold;
+    margin-block-end: 10px;
+}
+
+.register-form label {
+    margin-block-end: 4px;
+    font-weight: bold;
+}
+
+.register-form input,
+.register-form select {
+    padding: 8px;
+    margin-block-end: 10px;
+    font-size: 14px;
+    inline-size: 100%;
+}
+
+.register-form button {
+    inline-size: 100%;
+    padding: 12px 24px;
+    background-color: hsl(221, 50%, 55%);
+    color: hsl(0, 0%, 0%);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.register-form button span {
+    z-index: 1;
+    position: relative;
+}
+
+.register-form button::before {
+    content: '';
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    inline-size: 140px;
+    block-size: 140px;
+    border-radius: 50%;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: opacity .4s cubic-bezier(.19, 1, .22, 1), transform .75s cubic-bezier(.19, 1, .22, 1);
+    background-color: hsl(243, 80%, 62%);
+    opacity: 0;
+}
+
+.register-form button:hover span {
+    color: hsl(180, 2%, 12%);
+}
+
+.register-form button:hover::before {
+    opacity: 1;
+    transition-duration: .85s;
+    transform: translate3d(-50%, -50%, 0) scale3d(1.2, 1.2, 1.2);
+}
+
+.register-form button:hover {
+    background-color: #3578e5;
+}
+
+.register-form p {
+    font-size: 14px;
+    text-align: center;
+    margin-block-start: 20px;
+}
+
+.register-form p a {
+    color: #040404;
+    font-weight: bold;
+}
