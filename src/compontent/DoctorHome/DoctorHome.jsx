@@ -7,7 +7,7 @@ const DoctorHome = () => {
  return (
   <div>
     <nav className="navbar">
-      <h className="logo">Lab System</h>
+      <h className="logo">ABC Lab System</h>
       <ul>
         <li><a href="/Home">Home</a></li>
         <li><a href="/Login">Log out</a></li>
@@ -15,7 +15,7 @@ const DoctorHome = () => {
     </nav>
     <div className="home-content">
       <div className="right-bg">
-        <img className="position-absolute w-100 h-100 rounded" src="E:\React\lab-frontend\src\assets\lab image.jpg" style={{ objectFit: 'cover' }} alt="Right background" />
+        <img className="position-absolute w-100 h-100 rounded" src="lab-frontend/src/assets/lab image.jpg" style={{ objectFit: 'cover' }} alt="Right background" />
       </div>
       <div className="text-content">
         <h1>Best Healthcare Solution </h1>

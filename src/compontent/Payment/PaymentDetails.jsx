@@ -7,7 +7,7 @@ const PaymentDetails = () => {
   return (
     <>
       <nav className="navbar">
-        <h1 className="logo">Lab System</h1>
+        <h1 className="logo">ABC Lab System</h1>
         <ul>
           <li><a href="/userhome">Home</a></li>
           <li><a href="/Home">Log out</a></li>

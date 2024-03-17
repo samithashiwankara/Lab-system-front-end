@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin:0px;
     padding: 0px;
-    background-color: #ede6e6;
+    background-color: #e6e6ed;
 }
 
 /* Base Styles */
@@ -10,7 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    block-size: 90vh;
+    block-size: 100vh;
+    background-color: #4465e8;
 }
 
 .login-form {

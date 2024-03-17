@@ -60,7 +60,7 @@
     inset-inline-end: 0;
     inline-size: 100%;
     block-size: 100%;
-    background-image: url('E:\React\lab-frontend\src\assets\lab image.jpg');
+    background-image: url('lab-frontend/src/assets/lab image.jpg');
     background-size: cover;
     background-position: center;
     /* Adjust this value as needed */
@@ -140,3 +140,20 @@
     font-weight: bolder;
     /* Set font size of the button text */
 }
+/* .button-primary {
+    background-color: #1485d4;
+    border-radius: 16px;
+    padding: 16px 40px;
+    color: #ffffff;
+
+
+}
+
+.button-secondary {
+    border: 3px solid #1485d4;
+    border-radius: 16px;
+    padding: 16px 40px;
+    color: #1485d4;
+
+
+} */

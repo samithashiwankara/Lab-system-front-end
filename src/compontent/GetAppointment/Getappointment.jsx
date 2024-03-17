@@ -30,7 +30,7 @@ const GetAppointments = () => {
   return (
     <div>
       <nav className="navbar">
-        <h1 className="logo">Lab System</h1>
+        <h1 className="logo">ABC Lab System</h1>
         <ul>
           <li><a href="/Admin">Back</a></li>
           <li><a href="/Login">Log out</a></li>
